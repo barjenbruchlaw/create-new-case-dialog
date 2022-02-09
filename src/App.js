@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import PageNavBar from './components/PageNavBar.js'
+import { Container, Row, Col } from 'react-bootstrap'
+import './bootstrap.min.css'
+import './App.css'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='grid-container'>
+      
+      <header className='page-header'><Container><Row>
+        <Col><h1>Docket Manager v. 0.3</h1></Col>
+        <Col className='text-end mt-auto'>Signed in as <a href='/' style={{ color: 'white' }}>Brian Barjenbruch</a></Col>
+      </Row></Container></header>
+
+      <div className='page-sidebar'>
+      <PageNavBar />
+      </div>
+
+      <main className='page-main'>
+      <h1 className='text-center'>Home</h1>
+
+      </main>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
