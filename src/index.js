@@ -5,6 +5,9 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import Addcase from './pages/addcase'
+import AddCasePage2 from './pages/addCasePages/addCasePage2'
+import AddCasePage3 from './pages/addCasePages/addCasePage3'
+import AddRPCasePage4 from './pages/addCasePages/addRPCasePage4'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +15,9 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='addcase' element={<Addcase />} />
+        <Route path='addCasePage2' element={<AddCasePage2 />} />
+        <Route path='addCasePage3' element={<AddCasePage3 />} />
+        <Route path='addRPCasePage4' element={<AddRPCasePage4 />} />
       </Routes>
     </Router>
   </React.StrictMode>,

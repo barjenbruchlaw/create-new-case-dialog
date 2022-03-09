@@ -1,0 +1,87 @@
+import React from 'react'
+import PageNavBar from '../../components/PageNavBar'
+import MainHeader from '../../components/MainHeader'
+import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+
+const AddCasePage2 = () => {
+    return (
+
+        <div className='grid-container'>
+
+            <MainHeader />
+
+            <div className='page-sidebar'>
+                <PageNavBar />
+            </div>
+
+            <main className='page-main py-5'>
+                <h1 className='text-center font-weight-bold'>Add Case</h1>
+
+                <Container>
+                    <Row className="py-5">
+                        <h4> Enter the address information below:</h4>
+                    </Row>
+
+                    <Row>
+                        <Col className='p-5'>
+
+                            <Form.Group className='mb-3' controlId='inputCaseAddress'>
+
+                                <Form.Label>Street Address</Form.Label>
+                                <Form.Control placeholder='Enter Street Address' />
+                                <Form.Label>City</Form.Label>
+                                <Form.Control placeholder='Enter City' />
+                                <Form.Label>State</Form.Label>
+                                <Form.Select aria-label="Select State">
+                                    <option className='text-muted'>State</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="KS">Kansas</option>
+                                </Form.Select>
+
+                                {/* This list should populate from the list of counties entered in the system maintenance area */}
+
+                                <Form.Label>County</Form.Label>
+                                <Form.Select aria-label='Select County'>
+                                    <option className='text-muted'>County</option>
+                                    <option value="KS1">Douglas County, KS</option>
+                                    <option value="KS2">Johnson County, KS</option>
+                                    <option value="KS3">Leavenworth County, KS</option>
+                                    <option value="KS4">Wyandotte County, KS</option>
+                                    <option value="MO1">Boone County, MO</option>
+                                    <option value="MO2">Buchanan County, MO</option>
+                                    <option value="MO3">Cass County, MO</option>
+                                    <option value="MO4">Clay County, MO</option>
+                                    <option value="MO5">Jackson County, MO</option>
+                                    <option value="MO6">Johnson County, MO</option>
+                                    <option value="MO7">Lafayette County, MO</option>
+                                    <option value="MO8">Platte County, MO</option>
+                                    <option value="MO9">Ray County, MO</option>
+                                </Form.Select>
+
+                            </Form.Group>
+
+                        </Col>
+                        <Col className='p-5'>
+
+
+                        </Col>
+                    </Row>
+
+                    <Row>
+                        <Col className='px-5'></Col>
+                        <Col>
+                            <a href='/addcase' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addCasePage3' className='btn btn-dark mx-5 px-5'>Next</a>
+
+                        </Col>
+
+                    </Row>
+                </Container>
+
+            </main>
+
+        </div>
+
+    )
+}
+
+export default AddCasePage2
