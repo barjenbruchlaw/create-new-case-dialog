@@ -15,32 +15,36 @@ const AddCasePage2 = () => {
             </div>
 
             <main className='page-main py-5'>
-                <h1 className='text-center font-weight-bold'>Add Case</h1>
+                <h1 className='text-center fw-bolder'>Add Case</h1>
 
                 <Container>
                     <Row className="py-5">
-                        <h4> Enter the address information below:</h4>
+                        <h4 className="fw-bold"> Enter the address information below:</h4>
                     </Row>
 
-                    <Row>
-                        <Col className='p-5'>
-
+                    
                             <Form.Group className='mb-3' controlId='inputCaseAddress'>
 
-                                <Form.Label>Street Address</Form.Label>
-                                <Form.Control placeholder='Enter Street Address' />
-                                <Form.Label>City</Form.Label>
-                                <Form.Control placeholder='Enter City' />
-                                <Form.Label>State</Form.Label>
+                                <Row className='p-2'><Col xs={8}><Form.Label>Street Address</Form.Label>
+                                <Form.Control placeholder='Enter Street Address' /></Col>
+                                <Col xs={4}><Form.Label>Unit Number</Form.Label>
+                                <Form.Control placeholder='Enter Unit Number' /></Col>
+                                </Row>
+                    
+                                <Row className='p-2'><Col xs={6}><Form.Label>City</Form.Label>
+                                <Form.Control placeholder='Enter City' /></Col>
+                                <Col xs={3}><Form.Label>State</Form.Label>
                                 <Form.Select aria-label="Select State">
                                     <option className='text-muted'>State</option>
                                     <option value="MO">Missouri</option>
                                     <option value="KS">Kansas</option>
-                                </Form.Select>
+                                </Form.Select></Col>
+                                <Col xs={3}><Form.Label>ZIP Code</Form.Label><Form.Control placeholder='Enter ZIP Code' /></Col></Row>
+                                
 
                                 {/* This list should populate from the list of counties entered in the system maintenance area */}
 
-                                <Form.Label>County</Form.Label>
+                                <Row className='p-2'><Form.Label>County</Form.Label>
                                 <Form.Select aria-label='Select County'>
                                     <option className='text-muted'>County</option>
                                     <option value="KS1">Douglas County, KS</option>
@@ -56,16 +60,15 @@ const AddCasePage2 = () => {
                                     <option value="MO7">Lafayette County, MO</option>
                                     <option value="MO8">Platte County, MO</option>
                                     <option value="MO9">Ray County, MO</option>
-                                </Form.Select>
+                                </Form.Select></Row>
 
                             </Form.Group>
 
-                        </Col>
                         <Col className='p-5'>
 
 
                         </Col>
-                    </Row>
+                    
 
                     <Row>
                         <Col className='px-5'></Col>

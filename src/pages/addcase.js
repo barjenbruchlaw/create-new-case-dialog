@@ -15,11 +15,11 @@ const Addcase = () => {
             </div>
 
             <main className='page-main py-5'>
-                <h1 className='text-center font-weight-bold'>Add Case</h1>
+                <h1 className='text-center fw-bolder'>Add Case</h1>
 
                 <Container>
                     <Row className="py-5">
-                        <h4> Choose the property manager and property owner</h4>
+                        <h4 className='fw-bold'> Choose the property manager and property owner</h4>
                     </Row>
 
                     <Row>
