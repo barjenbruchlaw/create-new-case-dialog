@@ -5,8 +5,24 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
 const AddRPCasePage4 = () => {
 
-    const [residentNumber, setResidentNumber] = useState(0)
-
+    const [formValues, setFormValues] = useState([{ firstName: "", lastName : "", mi: "", suffix: ""}])
+    
+    let handleChange = (i, e) => {
+        let newFormValues = [...formValues];
+        newFormValues[i][e.target.name] = e.target.value;
+        setFormValues(newFormValues);
+      }
+    
+    let addFormFields = () => {
+        setFormValues([...formValues, { name: "", email: "" }])
+      }
+    
+    let removeFormFields = (i) => {
+        let newFormValues = [...formValues];
+        newFormValues.splice(i, 1);
+        setFormValues(newFormValues)
+    }
+    
     return (
 
         <div className='grid-container'>
@@ -17,15 +33,36 @@ const AddRPCasePage4 = () => {
                 <PageNavBar />
             </div>
 
-            <main className='page-main py-5'>
-                <h1 className='text-center fw-bolder'>Add Case</h1>
+            <main className='page-main p-5'>
+                <h1 className='pb-5 text-center fw-bolder'>Add Case</h1>
 
                 <Container>
-                    <Row className="py-5">
-                        <Form><label><h4 className="fw-bold mx-5"> How many residents are listed on the lease: </h4></label> <input className="text-center fw-bold" value={residentNumber} onChange={(e)=>{setResidentNumber(e.target.value)}}  /></Form>
-                    </Row>
-                    
+                <form>
+                    {formValues.map((element, index) => (
+                    <div className="form-inline" key={index}>
+                        <Row className='py-3'>
+                        <Col xs={1}><label className='fw-bold'>Resident:  {/* Can we number the residents as we add entries? */} </label></Col>
+                        <Col xs={4}><Form.Control placeholder='First Name' name="firstName" value={element.name || ""} onChange={e => handleChange(index, e)} /></Col>
+                        <Col xs={1}><Form.Control placeholder='Mid Init' name="mi" value={element.name || ""} onChange={e => handleChange(index, e)} /></Col>
+                        <Col xs={4}><Form.Control placeholder='Last Name' name="lastName" value={element.name || ""} onChange={e => handleChange(index, e)} /></Col>
+                        <Col xs={1}><Form.Control placeholder='Suffix' name="suffix" value={element.name || ""} onChange={e => handleChange(index, e)} /></Col>
+                        {
+                        index ? 
+                        <Col xs={1}><button type="button"  className="button remove" onClick={() => removeFormFields(index)}>Remove</button></Col> 
+                        : null
+                        }
+                        </Row></div>
+                    ))}
+                    <div className="button-section">
+                        <button className="button add" type="button" onClick={() => addFormFields()}>Add</button>
+                    </div>
+                </form>
 
+                    <Row className='py-5'>
+                        
+                        <h4>Please make sure that the only persons on this list are signing co-tenants.  Do not put minor residents on this list!</h4>
+
+                    </Row>
 
                     <Row>
                         <Col className='px-5'></Col>
