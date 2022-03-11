@@ -9,6 +9,8 @@ import AddCasePage2 from './pages/addCasePages/addCasePage2'
 import AddCasePage3 from './pages/addCasePages/addCasePage3'
 import AddRPCasePage4 from './pages/addCasePages/addRPCasePage4'
 import AddRPCasePage5 from './pages/addCasePages/addRPCasePage5'
+import AddRPCasePage6 from './pages/addCasePages/addRPCasePage6'
+import AddRPCasePage7 from './pages/addCasePages/addRPCasePage7'
 import AddUDCasePage4 from './pages/addCasePages/addUDCasePage4'
 
 ReactDOM.render(
@@ -21,6 +23,8 @@ ReactDOM.render(
         <Route path='addCasePage3' element={<AddCasePage3 />} />
         <Route path='addRPCasePage4' element={<AddRPCasePage4 />} />
         <Route path='addRPCasePage5' element={<AddRPCasePage5 />} />
+        <Route path='addRPCasePage6' element={<AddRPCasePage6 />} />
+        <Route path='addRPCasePage7' element={<AddRPCasePage7 />} />
         <Route path='addUDCasePage4' element={<AddUDCasePage4 />} />
       </Routes>
     </Router>
