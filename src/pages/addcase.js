@@ -6,13 +6,9 @@ import '../App.css'
 
 const Addcase = () => {
     return (
-        <div className='grid-container'>
+        <div>
 
-            <MainHeader />
-
-            <div className='page-sidebar'>
                 <PageNavBar />
-            </div>
 
             <main className='page-main py-5'>
                 <h1 className='text-center fw-bolder'>Add Case</h1>

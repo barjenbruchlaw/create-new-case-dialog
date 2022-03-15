@@ -6,15 +6,11 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 const AddRPCasePage5 = () => {
 
     return (
-        <div className='grid-container'>
+        <div>
 
-            <MainHeader />
+        <PageNavBar />
 
-            <div className='page-sidebar'>
-                <PageNavBar />
-            </div>
-
-            <main className='page-main py-5'>
+    <main className='page-main py-5'>
                 <h1 className='text-center fw-bolder'>Add Case</h1>
 
                 <Container>

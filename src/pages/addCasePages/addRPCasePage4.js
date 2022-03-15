@@ -25,15 +25,11 @@ const AddRPCasePage4 = () => {
     
     return (
 
-        <div className='grid-container'>
+        <div>
 
-            <MainHeader />
+        <PageNavBar />
 
-            <div className='page-sidebar'>
-                <PageNavBar />
-            </div>
-
-            <main className='page-main p-5'>
+    <main className='page-main py-5'>
                 <h1 className='pb-5 text-center fw-bolder'>Add Case</h1>
 
                 <Container>

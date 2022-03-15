@@ -8,15 +8,11 @@ const AddCasePage3 = () => {
     const [RPUD, setRadio] = useState("RP")
 
     return (
-        <div className='grid-container'>
+        <div>
 
-            <MainHeader />
+        <PageNavBar />
 
-            <div className='page-sidebar'>
-                <PageNavBar />
-            </div>
-
-            <main className='page-main py-5'>
+    <main className='page-main py-5'>
 
                 <h1 className='text-center fw-bolder'>Add Case</h1>
 
@@ -27,7 +23,7 @@ const AddCasePage3 = () => {
 
                     <Row>
 
-                        <Form className='p-5'> <h3>
+                        <Form className='p-3'> <h3>
 
                             <Form.Check inline className='m-5' label='Rent Payment only' type='radio' checked={RPUD === 'RP'} value='RP' onChange={(e) => { setRadio(e.target.value) }} />
                             <Form.Check inline className='m-5' label='Non-rent eviction (breach of lease, squatters, etc.)' type='radio' checked={RPUD === 'UD'} value='UD' onChange={(e) => { setRadio(e.target.value) }} />

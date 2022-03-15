@@ -6,25 +6,21 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 const AddRPCasePage7 = () => {
 
     return (
-        <div className='grid-container'>
+        <div>
 
-            <MainHeader />
+        <PageNavBar />
 
-            <div className='page-sidebar'>
-                <PageNavBar />
-            </div>
-
-            <main className='page-main py-5'>
+    <main className='page-main py-3'>
                 <h1 className='text-center fw-bolder'>Add Case</h1>
 
                 <Container>
-                    <Row className="py-5">
-                        <h4 className="fw-bold"> Please review the information submitted:</h4>
+                    <Row className="py-3">
+                        <h4 className="fw-bold text-center"> Please review the information submitted:</h4>
                     </Row>
 
                     {/* This should all populate from the prior submissions */}
 
-                    <Row>
+                    <Row className='justify-content-center'>
                         <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Property Manager and Owner</Card.Header>
                             <Card.Body>
@@ -61,7 +57,7 @@ const AddRPCasePage7 = () => {
                         </Card>
 
                     </Row>
-                    <Row className='py-5'>
+                    <Row className='py-5' className='justify-content-center'>
 
                         <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Resident names</Card.Header>
@@ -100,12 +96,15 @@ const AddRPCasePage7 = () => {
 
                     </Row>
 
-                    <Row>
-                        <Col className='px-5'></Col>
-                        <Col>
-                            <a href='/addRPCasePage6' className='btn btn-dark mx-5 px-5'>Back</a><a href='/' className='btn btn-primary mx-5 px-5'>Submit</a>
-
-                        </Col>
+                    <Row className='py-3 justify-content-center'>
+                    
+                            <Col className='text-end'>                            
+                            <a href='/addRPCasePage6' className='btn btn-dark mx-5 px-5'>Back</a>
+                            </Col>
+                            
+                            <Col>
+                            <a href='/' className='btn btn-primary mx-5 px-5'>Submit</a>
+                            </Col>
 
                     </Row>
 
