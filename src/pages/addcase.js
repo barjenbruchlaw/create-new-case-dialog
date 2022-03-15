@@ -1,6 +1,5 @@
 import React from 'react'
 import PageNavBar from '../components/PageNavBar'
-import MainHeader from '../components/MainHeader'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import '../App.css'
 

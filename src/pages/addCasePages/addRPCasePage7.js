@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PageNavBar from '../../components/PageNavBar'
-import MainHeader from '../../components/MainHeader'
-import { Container, Row, Col, Button, Card } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 
 const AddRPCasePage7 = () => {
 
@@ -57,7 +56,7 @@ const AddRPCasePage7 = () => {
                         </Card>
 
                     </Row>
-                    <Row className='py-5' className='justify-content-center'>
+                    <Row className='py-5 justify-content-center'>
 
                         <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Resident names</Card.Header>

@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PageNavBar from '../../components/PageNavBar'
-import MainHeader from '../../components/MainHeader'
-import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+import { Container, Row, Col, Form } from 'react-bootstrap'
 
 const AddRPCasePage6 = () => {
 

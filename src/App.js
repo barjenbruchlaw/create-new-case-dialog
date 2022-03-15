@@ -1,6 +1,5 @@
 import React from 'react'
 import PageNavBar from './components/PageNavBar.js'
-import { Container, Row, Col } from 'react-bootstrap'
 import './bootstrap.min.css'
 import './App.css'
 
