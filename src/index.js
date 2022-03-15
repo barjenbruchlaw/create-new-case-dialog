@@ -4,28 +4,40 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import Addcase from './pages/addcase'
+import AddCasePage1 from './pages/addCasePages/addCasePage1'
 import AddCasePage2 from './pages/addCasePages/addCasePage2'
 import AddCasePage3 from './pages/addCasePages/addCasePage3'
+import AddKSCasePage3 from './pages/addCasePages/addKSCasePage3'
 import AddRPCasePage4 from './pages/addCasePages/addRPCasePage4'
 import AddRPCasePage5 from './pages/addCasePages/addRPCasePage5'
 import AddRPCasePage6 from './pages/addCasePages/addRPCasePage6'
 import AddRPCasePage7 from './pages/addCasePages/addRPCasePage7'
 import AddUDCasePage4 from './pages/addCasePages/addUDCasePage4'
+import AddUDCasePage5 from './pages/addCasePages/addUDCasePage5'
+import AddUDCasePage6 from './pages/addCasePages/addUDCasePage6'
+import AddUDCasePage7 from './pages/addCasePages/addUDCasePage7'
+import AddUDCasePage8 from './pages/addCasePages/addUDCasePage8'
+import AddUDCasePage9 from './pages/addCasePages/addUDCasePage9'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
         <Route path='/' element={<App />} />
-        <Route path='addcase' element={<Addcase />} />
+        <Route path='addCasePage1' element={<AddCasePage1 />} />
         <Route path='addCasePage2' element={<AddCasePage2 />} />
         <Route path='addCasePage3' element={<AddCasePage3 />} />
+        <Route path='addKSCasePage3' element={<AddKSCasePage3 />} />
         <Route path='addRPCasePage4' element={<AddRPCasePage4 />} />
         <Route path='addRPCasePage5' element={<AddRPCasePage5 />} />
         <Route path='addRPCasePage6' element={<AddRPCasePage6 />} />
         <Route path='addRPCasePage7' element={<AddRPCasePage7 />} />
         <Route path='addUDCasePage4' element={<AddUDCasePage4 />} />
+        <Route path='addUDCasePage5' element={<AddUDCasePage5 />} />
+        <Route path='addUDCasePage6' element={<AddUDCasePage6 />} />
+        <Route path='addUDCasePage7' element={<AddUDCasePage7 />} />
+        <Route path='addUDCasePage8' element={<AddUDCasePage8 />} />
+        <Route path='addUDCasePage9' element={<AddUDCasePage9 />} />
       </Routes>
     </Router>
   </React.StrictMode>,

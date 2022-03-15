@@ -17,7 +17,7 @@ const PageNavBar = () => {
       <Container className='fw-bold text-center'>
         <Nav.Link href="#dash"><HouseDoorFill className='fs-3' /><br />Dashboard</Nav.Link>
         <Nav.Link href="#search"><Search className='fs-3' /><br />Search for a case</Nav.Link>
-        <Nav.Link href="/addcase"><BookmarkCheck className='fs-3' /><br />Add new case</Nav.Link>
+        <Nav.Link href="/addCasePage1"><BookmarkCheck className='fs-3' /><br />Add new case</Nav.Link>
         <Nav.Link href="#createdoc" disabled><FileEarmarkFill className='fs-3' /><br />Create Documents</Nav.Link>
         <Nav.Link href="#filecase" disabled><FolderFill className='fs-3' /><br />File case with court</Nav.Link>
         <Nav.Link href="#docket" disabled><ListCheck className='fs-3' /><br />Prepare docket for court</Nav.Link>

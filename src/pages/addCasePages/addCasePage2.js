@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import PageNavBar from '../../components/PageNavBar'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 
 const AddCasePage2 = () => {
+
+    const [MOKS, setMOKS] = useState("MO")
+
     return (
 
         <div>
@@ -29,8 +32,7 @@ const AddCasePage2 = () => {
                                 <Row className='p-2'><Col xs={6}><Form.Label>City</Form.Label>
                                 <Form.Control placeholder='Enter City' /></Col>
                                 <Col xs={3}><Form.Label>State</Form.Label>
-                                <Form.Select aria-label="Select State">
-                                    <option className='text-muted'>State</option>
+                                <Form.Select aria-label="Select State" onChange={(e) => { setMOKS(e.target.value) }}>
                                     <option value="MO">Missouri</option>
                                     <option value="KS">Kansas</option>
                                 </Form.Select></Col>
@@ -68,7 +70,7 @@ const AddCasePage2 = () => {
                     <Row>
                         <Col className='px-5'></Col>
                         <Col>
-                            <a href='/addcase' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addCasePage3' className='btn btn-dark mx-5 px-5'>Next</a>
+                            <a href='/addCasePage1' className='btn btn-dark mx-5 px-5'>Back</a><a href={MOKS === 'MO' ? '/addCasePage3' : '/addKSCasePage3'} className='btn btn-dark mx-5 px-5'>Next</a>
 
                         </Col>
 

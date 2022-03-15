@@ -1,9 +1,9 @@
 import React from 'react'
-import PageNavBar from '../components/PageNavBar'
+import PageNavBar from '../../components/PageNavBar'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
-import '../App.css'
+import '../../bootstrap.min.css'
 
-const Addcase = () => {
+const AddCasePage1 = () => {
     return (
         <div>
 
@@ -59,4 +59,4 @@ const Addcase = () => {
     )
 }
 
-export default Addcase
+export default AddCasePage1
