@@ -18,6 +18,10 @@ import AddUDCasePage6 from './pages/addCasePages/addUDCasePage6'
 import AddUDCasePage7 from './pages/addCasePages/addUDCasePage7'
 import AddUDCasePage8 from './pages/addCasePages/addUDCasePage8'
 import AddUDCasePage9 from './pages/addCasePages/addUDCasePage9'
+import AddUDCasePage10 from './pages/addCasePages/addUDCasePage10'
+import AddUDCasePage11 from './pages/addCasePages/addUDCasePage11'
+import AddUDCasePage12 from './pages/addCasePages/addUDCasePage12'
+import AddUDCasePage13 from './pages/addCasePages/addUDCasePage13'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -38,6 +42,10 @@ ReactDOM.render(
         <Route path='addUDCasePage7' element={<AddUDCasePage7 />} />
         <Route path='addUDCasePage8' element={<AddUDCasePage8 />} />
         <Route path='addUDCasePage9' element={<AddUDCasePage9 />} />
+        <Route path='addUDCasePage10' element={<AddUDCasePage10 />} />
+        <Route path='addUDCasePage11' element={<AddUDCasePage11 />} />
+        <Route path='addUDCasePage12' element={<AddUDCasePage12 />} />
+        <Route path='addUDCasePage13' element={<AddUDCasePage13 />} />
       </Routes>
     </Router>
   </React.StrictMode>,

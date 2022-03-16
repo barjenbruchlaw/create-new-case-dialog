@@ -1,59 +1,54 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PageNavBar from '../../components/PageNavBar'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 
-{/* This page should only appear if the prior option 'Holdover tenant' was checked */}
+const AddRPCasePage9 = () => {
 
-const AddUDCasePage9 = () => {
+    return (
+        <div>
 
-  return (
-    <div>
+            <PageNavBar />
 
-    <PageNavBar />
+            <main className='page-main py-5'>
+                <h1 className='text-center fw-bolder'>Add Case</h1>
 
-        <main className='page-main py-5'>
+                <Container>
+                    <Row className="py-5">
+                        <h4 className="fw-bold"> Please describe the incident requiring an emergency eviction below:</h4>
+                    </Row>
 
-            <h1 className='text-center fw-bolder'>Add Case</h1>
 
-            <Container>
-                <Row className="py-5 text-center">
-                    <h2> What is the monthly rent on this unit:</h2>
-                </Row>
+                    <Form.Group className='mb-3' controlId='inputIncident information'>
 
-                <Row className='pb-5'>
+                        <Row className='p-2'><Col xs={6}><Form.Label>Date of incident</Form.Label>
+                            <Form.Control type='date' /></Col>
+                            <Col xs={6}><Form.Label>Time of incident</Form.Label>
+                                <Form.Control type='time' /></Col>
+                        </Row>
 
-                    <Col></Col>
+                        <Row className='p-2'><Col><Form.Label>Describe the incident below</Form.Label>
+                            <Form.Control as='textarea' rows={6} placeholder='Describe the incident here' /></Col></Row>
 
-                    <Col>
+                    </Form.Group>
 
-                    <Form className='pb-3 text-center'> <h3>
 
-                        <Form.Control type='currency' placeholder='Enter Monthly Rent Amount' />{/* Input field should be in dollar currency format */}
+                    <Row>
+                        <Col className='px-5'></Col>
+                        <Col>
+                            <a href='/addUDCasePage8' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addUDCasePage10' className='btn btn-dark mx-5 px-5'>Next</a>
 
-                    </h3></Form>
+                        </Col>
 
-                    </Col>
+                    </Row>
 
-                    <Col></Col>
 
-                </Row>
+                </Container>
 
-                <Row>
-                    <Col className='px-5'></Col>
-                    <Col>
-                        <a href='/addUDCasePage8' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addUDCasePage10' className='btn btn-dark mx-5 px-5'>Next</a>
+            </main>
 
-                    </Col>
+        </div>
 
-                </Row>
-            </Container>
-
-        </main>
-
-    </div >
-)
-
+    )
 }
 
-
-export default AddUDCasePage9
+export default AddRPCasePage9
