@@ -20,7 +20,7 @@ const AddUDCasePage12 = () => {
                     {/* This should all populate from the prior submissions */}
 
                     <Row className='justify-content-center'>
-                        <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
+                        <Card bg='light' text='dark' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Property Manager and Owner</Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -30,7 +30,7 @@ const AddUDCasePage12 = () => {
                             </Card.Body>
                         </Card>
 
-                        <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
+                        <Card bg='light' text='dark' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Address</Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -44,7 +44,7 @@ const AddUDCasePage12 = () => {
                             </Card.Body>
                         </Card>
 
-                        <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
+                        <Card bg='light' text='dark' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Reason for eviction</Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -59,7 +59,7 @@ const AddUDCasePage12 = () => {
                     </Row>
                     <Row className='py-5 justify-content-center'>
 
-                        <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
+                        <Card bg='light' text='dark' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Resident names</Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -69,7 +69,7 @@ const AddUDCasePage12 = () => {
                             </Card.Body>
                         </Card>
 
-                        <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
+                        <Card bg='light' text='dark' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Lease violation</Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -80,7 +80,7 @@ const AddUDCasePage12 = () => {
                             </Card.Body>
                         </Card>
 
-                        <Card bg='dark' text='light' border="light" className='p-1' style={{ width: '24rem' }}>
+                        <Card bg='light' text='dark' border="light" className='p-1' style={{ width: '24rem' }}>
                             <Card.Header className='fw-bold'>Documents uploaded</Card.Header>
                             <Card.Body>
                                 <Card.Text>
