@@ -4,7 +4,7 @@ import { Container, Row, Col, Form } from 'react-bootstrap'
 
 /* This page should only appear if the prior option 'Other lease violation' was checked */
 
-const AddUDCasePage11 = () => {
+const AddKSUDCasePage9 = () => {
 
     return (
         <div>
@@ -37,7 +37,7 @@ const AddUDCasePage11 = () => {
                     <Row>
                         <Col className='px-5'></Col>
                         <Col>
-                            <a href='/addUDCasePage10' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addUDCasePage12' className='btn btn-dark mx-5 px-5'>Next</a> <br />
+                            <a href='/addKSUDCasePage8' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addKSUDCasePage10' className='btn btn-dark mx-5 px-5'>Next</a> <br />
 
                         </Col>
 
@@ -53,4 +53,4 @@ const AddUDCasePage11 = () => {
     )
 }
 
-export default AddUDCasePage11
+export default AddKSUDCasePage9

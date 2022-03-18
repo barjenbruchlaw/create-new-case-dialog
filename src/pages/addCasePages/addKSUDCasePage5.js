@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import PageNavBar from '../../components/PageNavBar'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 
-const AddUDCasePage5 = () => {
+{/* This page should only appear if the prior question 'Have you provided notice to the resident?' was checked no */}
+
+const AddKSUDCasePage5 = () => {
 
   return (
     <div>
@@ -24,11 +26,6 @@ const AddUDCasePage5 = () => {
 
                         <Form.Check inline className='ms-5 py-1' label='Squatters / No agreement with tenants' type='checkbox' value='isSquatter' /> <br />
                         <Form.Check inline className='ms-5 py-1' label='Holdover tenant' type='checkbox' value='isHoldover' /> <br />
-                        <Form.Check inline className='ms-5 py-1' label='Violence/credible threat of violence against other residents or staff' type='checkbox' value='isViolence' /> <br />
-                        <Form.Check inline className='ms-5 py-1' label='More than one year worth of rent in damage to the unit' type='checkbox' value='isMajorDamage' /> <br />
-                        <Form.Check inline className='ms-5 py-1' label='Credible evidence of drug sales in unit' type='checkbox' value='isDrugSales' /> <br />
-                        <Form.Check inline className='ms-5 py-1' label='Illegal drugs found in unit' type='checkbox' value='isDrugPossession' /> <br />
-                        <Form.Check inline className='ms-5 py-1' label='Allowing banned persons on the property' type='checkbox' value='isAllowsBanned' /> <br />
                         <Form.Check inline className='ms-5 py-1' label='Other lease violations (e.g., unauthorized residents or pets, housekeeping violations)' type='checkbox' value='isLeaseViolation' /> <br />
 
                     </h4></Form>
@@ -38,7 +35,7 @@ const AddUDCasePage5 = () => {
                 <Row className='py-5'>
                     <Col className='px-5'></Col>
                     <Col>
-                        <a href='/addUDCasePage4' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addUDCasePage6' className='btn btn-dark mx-5 px-5'>Next</a>
+                        <a href='/addKSUDCasePage4' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addKSUDCasePage6' className='btn btn-dark mx-5 px-5'>Next</a>
 
                     </Col>
 
@@ -53,4 +50,4 @@ const AddUDCasePage5 = () => {
 }
 
 
-export default AddUDCasePage5
+export default AddKSUDCasePage5

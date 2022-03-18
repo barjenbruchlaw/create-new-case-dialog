@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import PageNavBar from '../../components/PageNavBar'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 
-{/* This page should only appear if the prior question 'Have you provided notice to the resident?' was checked no */}
-
-const AddUDCasePage4 = () => {
+const AddKSUDCasePage4 = () => {
 
   const [radio, setRadio] = useState("Y")
 
@@ -18,8 +16,18 @@ const AddUDCasePage4 = () => {
             <h1 className='text-center fw-bolder'>Add Case</h1>
 
             <Container>
-                <Row className="pt-5 text-center">
-                    <h2> Do you need our office to provide a notice to the resident(s):</h2>
+                <Row className="py-3 text-center">
+                    <h2>    <br /><br />
+                            <strong>NOTE: Kansas requires that the resident be provided a fourteen day notice <br />
+                            to resolve the lease violation or thirty days to vacate the property in order <br />
+                            to proceed with an eviction.</strong> <br /><br />
+                    </h2>
+                </Row>
+
+                <Row>
+
+                    <h3 className='text-center'>Do you need our office to provide notice to the resident? </h3>
+
                 </Row>
 
                 <Row>
@@ -38,7 +46,7 @@ const AddUDCasePage4 = () => {
                 <Row>
                     <Col className='px-5'></Col>
                     <Col>
-                        <a href='/addCasePage3' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addUDCasePage5' className='btn btn-dark mx-5 px-5'>Next</a>
+                        <a href='/addKSCasePage3' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addKSUDCasePage5' className='btn btn-dark mx-5 px-5'>Next</a>
 
                     </Col>
 
@@ -53,4 +61,4 @@ const AddUDCasePage4 = () => {
 }
 
 
-export default AddUDCasePage4
+export default AddKSUDCasePage4

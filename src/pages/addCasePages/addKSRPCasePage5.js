@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import PageNavBar from '../../components/PageNavBar'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 
-{/* This page should only appear if the prior question 'Do you know the names of any of the current resident(s)?' was checked yes */}
-
-const AddUDCasePage7 = () => {
+const AddKSRPCasePage5 = () => {
 
     const [formValues, setFormValues] = useState([{ firstName: "", lastName : "", mi: "", suffix: ""}])
     
@@ -55,12 +53,16 @@ const AddUDCasePage7 = () => {
                     </div>
                 </form>
 
-                <dir className='fs-5 py-5 text-center'>Please make sure that the only persons on this list are signing co-tenants.  Do not put minor residents on this list!</dir>
+                    <Row className='py-5'>
+                        
+                        <dir className='fs-5 text-center'>Please make sure that the only persons on this list are signing co-tenants.  Do not put minor residents on this list!</dir>
+
+                    </Row>
 
                     <Row>
                         <Col className='px-5'></Col>
                         <Col>
-                            <a href='/addUDCasePage6' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addUDCasePage8' className='btn btn-dark mx-5 px-5'>Next</a>
+                            <a href='/addKSRPCasePage4' className='btn btn-dark mx-5 px-5'>Back</a><a href='/addKSRPCasePage6' className='btn btn-dark mx-5 px-5'>Next</a>
 
                         </Col>
 
@@ -74,4 +76,4 @@ const AddUDCasePage7 = () => {
     )
 }
 
-export default AddUDCasePage7
+export default AddKSRPCasePage5

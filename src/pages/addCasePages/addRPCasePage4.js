@@ -55,7 +55,7 @@ const AddRPCasePage4 = () => {
 
                     <Row className='py-5'>
                         
-                        <h4>Please make sure that the only persons on this list are signing co-tenants.  Do not put minor residents on this list!</h4>
+                    <dir className='fs-5 text-center'>Please make sure that the only persons on this list are signing co-tenants.  Do not put minor residents on this list!</dir>
 
                     </Row>
 

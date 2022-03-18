@@ -17,7 +17,7 @@ const AddCasePage3 = () => {
 
                 <Container>
                     <Row className="py-5">
-                        <h2> Is the main reason for this case due to failure to pay rent or for other reasons:</h2>
+                        <h2> Is the sole reason for this case due to failure to pay rent or for other reasons:</h2>
                     </Row>
 
                     <Row>
